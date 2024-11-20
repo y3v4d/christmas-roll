@@ -21,7 +21,7 @@
   })
 
   onMount (() => {
-    global.socket = io('http://localhost:3000', { autoConnect: false });
+    global.socket = io('https://hammerhead-app-7v4ds.ondigitalocean.app', { autoConnect: false });
 
     global.socket.on("connect", onConnected);
     global.socket.on("disconnect", onDisconnected);
